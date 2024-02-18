@@ -15,24 +15,27 @@ class Quiz():
     def opcao_invalida(self):
         print("Opção inválida.\nPor favor, tente novamente.")
 
+    def resultado_pergunta(self,pergunta):
+        if pergunta == "a":
+            self.dicionario["Reforço"] += 1
+        elif pergunta == "b":
+            self.dicionario["Transmutação"] += 1
+        elif pergunta == "c":
+            self.dicionario["Conjuração"] += 1
+        elif pergunta == "d":
+            self.dicionario["Manipulação"] += 1
+        elif pergunta == "e":
+            self.dicionario["Emissão"] += 1
+        elif pergunta == "f":
+            self.dicionario["Especialização"] += 1
+
     def pergunta_1(self):
         try:
             while True:
                 pergunta = str(input("1)Qual das qualidades abaixo você considera estar mais presente na sua personalidade?\n"
                                      "a)Esperto.\nb)Paciente.\nc)Resiliente.\nd)Racional.\ne)Determinado.\nf)Independente.\nResposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -48,18 +51,7 @@ class Quiz():
                 pergunta = str(input("2)Das opções abaixo, qual você considera estar mais próxima de um defeito seu?\n"
                                      "a)Teimoso.\nb)Mentiroso.\nc)Impulsivo.\nd)Indiferente.\ne)Nervoso.\nf)Egoísta.\nResposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -76,18 +68,7 @@ class Quiz():
                                      "c)Cuidadoso e Observador.\nd)Muito malandro e esperto.\ne)Protetor e Racional.\nf)Carismático e Inteligente.\n"
                                      "Resposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -103,18 +84,7 @@ class Quiz():
                 pergunta = str(input("4)Que tipo de pessoa te irrita profundamente?\na)Muito emocionais.\nb)Desrespeitosas.\nc)Invasivas.\nd)Debochadas."
                                      "\ne)Certinhas demais.\nf)Mentirosas.\nResposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -131,18 +101,7 @@ class Quiz():
                              "d)Atividades básicas e na rotina.\ne)Atividades em grupo.\nf)Estimular a inteligência ou criatividade.\n"
                              "Resposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -186,18 +145,7 @@ class Quiz():
                                      "f)Analisa todos os prováveis eventos para solucionar o problema e tenta encontrar a melhor forma de resolver.\n"
                                      "Resposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
@@ -214,18 +162,7 @@ class Quiz():
                                      "c)Todos tem seu próprio tempo de aprendizagem.\nd)Eu nunca me contento com uma coisa só.\ne)Não espere a vitória vir até você.\n"
                                      "f)Esteja sempre três passos a frente.\nResposta: ")).lower()
                 if pergunta in self.alternativas:
-                    if pergunta == "a":
-                        self.dicionario["Reforço"] += 1
-                    elif pergunta == "b":
-                        self.dicionario["Transmutação"] += 1
-                    elif pergunta == "c":
-                        self.dicionario["Conjuração"] += 1
-                    elif pergunta == "d":
-                        self.dicionario["Manipulação"] += 1
-                    elif pergunta == "e":
-                        self.dicionario["Emissão"] += 1
-                    elif pergunta == "f":
-                        self.dicionario["Especialização"] += 1
+                    self.resultado_pergunta(pergunta)
                     print("\n")
                     break
                 else:
